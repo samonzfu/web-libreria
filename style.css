@@ -2,8 +2,21 @@
           font-family: "AMORIA";
           src:url("AMORIA.otf");
         }
+        @font-face {
+          font-family: "TYPEWRITER";
+          src: url("JMH\ Typewriter.otf");
+        }
+         @font-face {
+          font-family: "TYPEWRITERBOLD";
+          src:url("JMH\ Typewriter-Bold.otf");
+        }
+        @font-face {
+          font-family: "TYPEWRITERTHIN";
+          src:url("JMH\ Typewriter-Thin.otf");
+        }
         body {
             text-align: center;
+            font-family: "TYPEWRITERTHIN";
         }
         ul {
             display: inline-block;
@@ -18,22 +31,47 @@
             font-size: 60px;
             color: palevioletred;
         }
-        ul li a {
-            color: black;  /* Esto cambia el color de los enlaces y sus puntos. */
-        }
-
-        h2,h3{
+    
+        h3{
             font-family:"AMORIA";
             font-size: 30px;
             color:palevioletred;
-;
+        }
+        nav ul{
+            list-style-type: none;
+            display:flex;
+            margin:0px;
+            padding:0px;
+            gap:80px;
+            justify-content: center;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;  /* Esto cambia el color de los enlaces y sus puntos. */
+            font-family:"TYPEWRITERBOLD" ;
+            
         }
         body{
           background:pink;
         }
         header,main,footer{
-          width:800px; /* Establece la anchura de los elementos */
+          width:1000px; /* Establece la anchura de los elementos */
           background:seashell; /* Establece el fondo de los elementos */
           margin:auto; /* Centralo en pantalla */
           padding:20px; /* Pon un poco de margen interior */
+        }
+        #contenedorlibros{
+          display:grid;         /* Este elemento es una rejilla */
+          grid-template-columns:auto auto auto; /* Y tiene tres columnas */
+          gap:20px; 
+        }
+        #links a{
+          color:black;
+          font-style: "TYPEWRITERBOLD";
+          text-decoration: none;
+          display:flex;
+          margin:0px;
+          padding:0px;
+          gap:80px;
+          justify-content: center;
         }
