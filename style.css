@@ -90,6 +90,6 @@ header,main,footer{
   font-weight: bold;
 }
 
-span {
+span { /*span se usa para dividir algo de un parágrafo (para aplicarle CSS) sin afectar a la frase*/
   color: red;
 }
