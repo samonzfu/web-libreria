@@ -71,12 +71,12 @@ header,main,footer{
 }
 
 .barra {
-  width: 80%;
+  width: 80%; /*Ancho de la barra*/
   background-color:papayawhip; /* color de fondo de la barra */
-  border-radius: 20px;
-  overflow: hidden;
-  height: 25px;
-  margin: 10px auto;
+  border-radius:20px; /*hace que la barra sea redondeada*/
+  overflow: hidden; /*Evita que la parte de otro color se sobresalga de los bordes redondeados*/
+  height: 25px; /*Altura de la barra*/
+  margin: 10px auto; /*Separación de la barra con lo de arriba en izq y der.*/
 }
 
 /* Parte que indica el progreso */
