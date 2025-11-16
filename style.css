@@ -1,82 +1,95 @@
-        @font-face {
-          font-family: "AMORIA";
-          src:url("AMORIA.otf");
-        }
-        @font-face {
-          font-family: "TYPEWRITER";
-          src: url("JMH\ Typewriter.otf");
-        }
-         @font-face {
-          font-family: "TYPEWRITERBOLD";
-          src:url("JMH\ Typewriter-Bold.otf");
-        }
-        @font-face {
-          font-family: "TYPEWRITERTHIN";
-          src:url("JMH\ Typewriter-Thin.otf");
-        }
-        body {
-            text-align: center;
-            font-family: "TYPEWRITERTHIN";
-        }
-        body{
-          background-image: url("https://images.pexels.com/photos/2101704/pexels-photo-2101704.jpeg");
-          background-size: cover;
-          background-attachment: fixed;
-          background-repeat: no-repeat;
-        }
-        ul {
-            display: inline-block;
-            text-align: left;
-        }
-        header nav {
-            text-align: center;
-        }
+/*CARGAR FUENTES PERSONALIZADAS*/
+@font-face {  /*Registrar la fuente*/
+  font-family: "AMORIA"; /*Nombre interno a la fuente (la que usaré después en CSS)*/
+  src:url("AMORIA.otf"); /*Indico dónde está el archivo de la fuente*/
+}
+@font-face {
+  font-family: "TYPEWRITER";
+  src: url("JMH\ Typewriter.otf");
+}
+@font-face {
+  font-family: "TYPEWRITERBOLD";
+  src:url("JMH\ Typewriter-Bold.otf");
+}
+@font-face {
+  font-family: "TYPEWRITERTHIN";
+  src:url("JMH\ Typewriter-Thin.otf");
+}
+/*BODY*/
+body {
+  text-align: center; /*Centra todo lo que está en el body*/
+  font-family: "TYPEWRITERTHIN"; /*Fuente de texto*/
+  background-image: url("https://images.pexels.com/photos/2101704/pexels-photo-2101704.jpeg"); /*Imagen fondo pág*/
+  background-size: cover; /*Hace que el fondo cubra TODA la pantalla*/
+  background-attachment:scroll; /*Decide si el fondo se mueve o no al scrpllear*/
+  background-repeat: no-repeat; /*la imagen NO se repite en plan mosaico*/
+}
+/*TÍTULOS*/
+h1, h3{ /*SUPER IMPORTANTE LA COMA*/
+  font-family:"AMORIA";
+  color: palevioletred;
+}
+h1 {font-size: 60px;}
+h3 {font-size: 30px;}
+article h4{
+  font-family:"TYPEWRITERBOLD" ;
+}
+/*NAVEGACIÓN*/
+nav ul{
+  list-style-type: none;
+  display:flex;
+  margin:0px;
+  padding:0px;
+  gap:80px;
+  justify-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;  /* Esto cambia el color de los enlaces y sus puntos. */
+  font-family:"TYPEWRITERBOLD"  
+}
+header,main,footer{
+  width:1000px; /* Establece la anchura de los elementos */
+  background:seashell; /* Establece el fondo de los elementos */
+  margin:auto; /* Centralo en pantalla */
+  padding:20px; /* Pon un poco de margen interior */
+}
+#contenedorlibros{
+  display:grid;         /* Este elemento es una rejilla */
+  grid-template-columns:auto auto auto; /* Y tiene tres columnas */
+  gap:20px; 
+}
+#links a{
+  color:black;
+  font-family: "TYPEWRITERBOLD";
+  text-decoration: none;
+  display:flex;
+  margin:0px;
+  padding:0px;
+  gap:80px;
+  justify-content: center;
+}
 
-        h1{
-            font-family:"AMORIA";
-            font-size: 60px;
-            color: palevioletred;
-        }
-    
-        h3{
-            font-family:"AMORIA";
-            font-size: 30px;
-            color:palevioletred;
-        }
-        nav ul{
-            list-style-type: none;
-            display:flex;
-            margin:0px;
-            padding:0px;
-            gap:80px;
-            justify-content: center;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;  /* Esto cambia el color de los enlaces y sus puntos. */
-            font-family:"TYPEWRITERBOLD" ;
-            
-        }
-        
-        
-        header,main,footer{
-          width:1000px; /* Establece la anchura de los elementos */
-          background:seashell; /* Establece el fondo de los elementos */
-          margin:auto; /* Centralo en pantalla */
-          padding:20px; /* Pon un poco de margen interior */
-        }
-        #contenedorlibros{
-          display:grid;         /* Este elemento es una rejilla */
-          grid-template-columns:auto auto auto; /* Y tiene tres columnas */
-          gap:20px; 
-        }
-        #links a{
-          color:black;
-          font-style: "TYPEWRITERBOLD";
-          text-decoration: none;
-          display:flex;
-          margin:0px;
-          padding:0px;
-          gap:80px;
-          justify-content: center;
-        }
+.barra {
+  width: 100%;
+  background-color: #eee; /* color de fondo de la barra */
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 10px;
+}
+
+/* Parte que indica el progreso */
+.progreso {
+  height: 100%;
+  background-color: #4CAF50; /* color del progreso */
+  width: 0%; /* se ajusta según los libros leídos */
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
