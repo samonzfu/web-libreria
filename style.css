@@ -18,6 +18,12 @@
             text-align: center;
             font-family: "TYPEWRITERTHIN";
         }
+        body{
+          background-image: url("https://images.pexels.com/photos/2101704/pexels-photo-2101704.jpeg");
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+        }
         ul {
             display: inline-block;
             text-align: left;
@@ -51,9 +57,8 @@
             font-family:"TYPEWRITERBOLD" ;
             
         }
-        body{
-          background:pink;
-        }
+        
+        
         header,main,footer{
           width:1000px; /* Establece la anchura de los elementos */
           background:seashell; /* Establece el fondo de los elementos */
