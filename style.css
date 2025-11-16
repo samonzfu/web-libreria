@@ -71,18 +71,18 @@ header,main,footer{
 }
 
 .barra {
-  width: 100%;
+  width: 80%;
   background-color: #eee; /* color de fondo de la barra */
   border-radius: 20px;
   overflow: hidden;
   height: 25px;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 
 /* Parte que indica el progreso */
 .progreso {
   height: 100%;
-  background-color: #4CAF50; /* color del progreso */
+  background-color:palevioletred; /* color del progreso */
   width: 0%; /* se ajusta según los libros leídos */
   text-align: center;
   color: white;
@@ -91,5 +91,6 @@ header,main,footer{
 }
 
 span { /*span se usa para dividir algo de un parágrafo (para aplicarle CSS) sin afectar a la frase*/
-  color: red;
+  color: black;
+  font-family: "TYPEWRITERBOLD";
 }
