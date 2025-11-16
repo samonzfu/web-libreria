@@ -72,7 +72,7 @@ header,main,footer{
 
 .barra {
   width: 80%;
-  background-color: #eee; /* color de fondo de la barra */
+  background-color:papayawhip; /* color de fondo de la barra */
   border-radius: 20px;
   overflow: hidden;
   height: 25px;
